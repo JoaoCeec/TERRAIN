@@ -38,7 +38,7 @@ Space jump
 <script>
 
 let scene=new THREE.Scene()
-scene.fog=new THREE.Fog(0x000000,10,200)
+scene.fog=new THREE.Fog(0x000000,10,20)
 
 let camera=new THREE.PerspectiveCamera(75,innerWidth/innerHeight,0.1,1000)
 
@@ -47,7 +47,7 @@ renderer.setSize(innerWidth,innerHeight)
 renderer.setPixelRatio(0.5)
 document.body.appendChild(renderer.domElement)
 
-let light=new THREE.DirectionalLight(0xffffff,1)
+let light=new THREE.DirectionalLight(0xffffff,2)
 light.position.set(1,2,1)
 scene.add(light)
 
